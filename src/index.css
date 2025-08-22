@@ -8,8 +8,9 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Private Banking Color Palette */
+    --background: 0 0% 99%;
+    --foreground: 220 9% 15%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -17,47 +18,48 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Financial App Primary - Professional Blue */
-    --primary: 217 91% 60%;
+    /* Private Banking Primary - Deep Navy */
+    --primary: 220 28% 25%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 91% 70%;
+    --primary-glow: 220 28% 35%;
 
-    /* Success/Financial Green */
-    --secondary: 142 76% 36%;
-    --secondary-foreground: 0 0% 100%;
+    /* Luxury Gold Accent */
+    --secondary: 45 85% 55%;
+    --secondary-foreground: 220 28% 15%;
 
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 9% 55%;
 
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220 8.9% 46.1%;
+    --accent: 45 85% 95%;
+    --accent-foreground: 220 28% 25%;
 
-    /* South African Gold Accent */
-    --warning: 43 96% 56%;
-    --warning-foreground: 222.2 84% 4.9%;
+    /* Premium Gold Warning */
+    --warning: 45 85% 55%;
+    --warning-foreground: 220 28% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 217 91% 60%;
+    --border: 220 15% 88%;
+    --input: 220 15% 94%;
+    --ring: 220 28% 25%;
 
-    /* Financial App Specific Colors */
-    --success: 142 76% 36%;
+    /* Private Banking Specific Colors */
+    --success: 120 45% 35%;
     --success-foreground: 0 0% 100%;
     
-    --info: 199 89% 48%;
+    --info: 210 40% 40%;
     --info-foreground: 0 0% 100%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 70%));
-    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%), hsl(199 89% 48%));
+    /* Luxury Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 28% 25%), hsl(220 28% 35%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 85% 55%), hsl(45 85% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 28% 15%), hsl(220 28% 25%));
 
-    /* Shadows */
-    --shadow-primary: 0 10px 25px -5px hsl(217 91% 60% / 0.25);
-    --shadow-card: 0 4px 6px -1px hsl(220 13% 91% / 0.1), 0 2px 4px -1px hsl(220 13% 91% / 0.06);
+    /* Luxury Shadows */
+    --shadow-primary: 0 20px 40px -10px hsl(220 28% 25% / 0.3);
+    --shadow-card: 0 8px 32px -8px hsl(220 28% 25% / 0.12);
+    --shadow-gold: 0 8px 25px -5px hsl(45 85% 55% / 0.25);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -126,7 +128,13 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
   }
 }
 
@@ -136,8 +144,8 @@ All colors MUST be HSL.
     background: var(--gradient-primary);
   }
   
-  .bg-gradient-success {
-    background: var(--gradient-success);
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
   }
   
   .bg-gradient-hero {
