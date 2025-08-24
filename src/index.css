@@ -8,58 +8,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Private Banking Color Palette */
-    --background: 0 0% 99%;
-    --foreground: 220 9% 15%;
+    /* iOS-Style SA Money Colors - Light Mode */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 8%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 8%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 8%;
 
-    /* Private Banking Primary - Deep Navy */
-    --primary: 220 28% 25%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 220 28% 35%;
+    /* SA Money Primary - Deep Black */
+    --primary: 0 0% 8%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 0 0% 15%;
 
-    /* Luxury Gold Accent */
-    --secondary: 45 85% 55%;
-    --secondary-foreground: 220 28% 15%;
+    /* SA Money Green - Rand Green */
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 15% 96%;
-    --muted-foreground: 220 9% 55%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 45 85% 95%;
-    --accent-foreground: 220 28% 25%;
+    --accent: 142 76% 95%;
+    --accent-foreground: 0 0% 8%;
 
-    /* Premium Gold Warning */
-    --warning: 45 85% 55%;
-    --warning-foreground: 220 28% 15%;
+    /* SA Money Green for Success */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
 
-    --destructive: 0 60% 50%;
-    --destructive-foreground: 0 0% 100%;
+    /* SA Money Blue for Info */
+    --info: 212 100% 47%;
+    --info-foreground: 0 0% 98%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 94%;
-    --ring: 220 28% 25%;
+    /* Warning - Amber */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 8%;
 
-    /* Private Banking Specific Colors */
-    --success: 120 45% 35%;
-    --success-foreground: 0 0% 100%;
-    
-    --info: 210 40% 40%;
-    --info-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    /* Luxury Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(220 28% 25%), hsl(220 28% 35%));
-    --gradient-gold: linear-gradient(135deg, hsl(45 85% 55%), hsl(45 85% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(220 28% 15%), hsl(220 28% 25%));
+    --border: 0 0% 89%;
+    --input: 0 0% 94%;
+    --ring: 0 0% 8%;
 
-    /* Luxury Shadows */
-    --shadow-primary: 0 20px 40px -10px hsl(220 28% 25% / 0.3);
-    --shadow-card: 0 8px 32px -8px hsl(220 28% 25% / 0.12);
-    --shadow-gold: 0 8px 25px -5px hsl(45 85% 55% / 0.25);
+    /* SA Money Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 15%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 42%));
+    --gradient-info: linear-gradient(135deg, hsl(212 100% 47%), hsl(212 100% 53%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 4%), hsl(0 0% 12%));
+
+    /* iOS-Style Shadows */
+    --shadow-primary: 0 4px 25px -2px hsl(0 0% 8% / 0.12);
+    --shadow-card: 0 2px 20px -2px hsl(0 0% 8% / 0.08);
+    --shadow-success: 0 4px 25px -2px hsl(142 76% 36% / 0.15);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -84,33 +86,43 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* iOS-Style SA Money Colors - Dark Mode */
+    --background: 0 0% 6%;
+    --foreground: 0 0% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 142 76% 45%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --success: 142 76% 45%;
+    --success-foreground: 0 0% 8%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --info: 212 100% 60%;
+    --info-foreground: 0 0% 8%;
+
+    --warning: 38 92% 60%;
+    --warning-foreground: 0 0% 8%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 8%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 0 0% 98%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -129,12 +141,15 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-sans;
-    font-family: 'Inter', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
   }
 }
 
